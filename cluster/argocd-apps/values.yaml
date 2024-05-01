@@ -1,5 +1,5 @@
 source:
-  repoUrl: https://github.com/fabsys/k3s.git
+  repoUrl: https://github.com/fabsys/k3s-virtualbox.git
   revision: master
 
 apps:
