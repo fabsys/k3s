@@ -29,9 +29,9 @@ flowchart LR
     end
     subgraph VB["[VirtualBox] Ubuntu Server VMs"]
         direction BT
-        master0[master0 - 192.168.0.200]
-        worker0[worker0 - 192.168.0.201]
-        worker1[worker1 - 192.168.0.202]
+        master0[master0 - 192.168.1.200]
+        worker0[worker0 - 192.168.1.201]
+        worker1[worker1 - 192.168.1.202]
     end
   end
 ```
@@ -82,8 +82,8 @@ The cluster is ready. Now you can deploy some apps.
 - `make argocd` - deploy ArgoCD, wait for it be ready and then configure it to deploy apps declared inside the [cluster/apps folder](https://github.com/erykio/k3s-virtualbox/tree/master/cluster/apps)
 - wait until argocd deploys metallb and ingress
 - when `make ingressip` returns `192.168.0.200` then you should be able to access:
-    - [The cluster homepage](http://home.192-168-0-200.nip.io/)
-    - [ArgoCD dashboard](http://argocd.192-168-0-200.nip.io/) (admin/admin)
+    - [The cluster homepage](http://home.192-168-1-200.nip.io/)
+    - [ArgoCD dashboard](http://argocd.192-168-1-200.nip.io/) (admin/admin)
 
 
 
