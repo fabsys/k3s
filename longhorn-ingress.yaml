@@ -1,0 +1,22 @@
+---
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: longhorn 
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    hajimari.io/appName: Longhorn 
+    hajimari.io/icon: robot
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "longhorn.192-168-1-200.nip.io"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: longhorn-frontend 
+                port:
+                  number: 80
