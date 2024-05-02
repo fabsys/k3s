@@ -41,7 +41,7 @@ imagePullPolicy: IfNotPresent
 
 ## How many runner pods to launch.
 ##
-replicas: 1 
+replicas: 2 
 
 ## How many old ReplicaSets for this Deployment you want to retain
 # revisionHistoryLimit: 10
