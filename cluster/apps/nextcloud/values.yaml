@@ -23,9 +23,10 @@ replicaCount: 1
 ## ref: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ##
 ingress:
-  enabled: true
+  enabled: false 
   className: nginx
-  annotations: {}
+  annotations: 
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
   #  nginx.ingress.kubernetes.io/proxy-body-size: 4G
   #  kubernetes.io/tls-acme: "true"
   #  cert-manager.io/cluster-issuer: letsencrypt-prod
