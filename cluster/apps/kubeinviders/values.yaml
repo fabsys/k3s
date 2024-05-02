@@ -70,7 +70,7 @@ ingress:
   tls: {}
 
 # Use route_host only if ingress is disabled
-route_host: ""
+#route_host: ""
 
 serviceMonitor:
   enabled: false
