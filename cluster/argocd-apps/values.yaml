@@ -21,6 +21,6 @@ apps:
   - appName: gitlab-runner
     path: cluster/apps/gitlab-runner
     namespace: gitlab-runner
-  - appName: kubeinviders 
-    path: cluster/apps/kubeinviders
-    namespace: kubeinviders
+  - appName: nextcloud 
+    path: cluster/apps/nextcloud
+    namespace: nextcloud
