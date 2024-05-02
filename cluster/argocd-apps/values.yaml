@@ -21,4 +21,6 @@ apps:
   - appName: gitlab-runner
     path: cluster/apps/gitlab-runner
     namespace: gitlab-runner
-
+  - appName: pacman
+    path: cluster/apps/pacman
+    namespace: pacman
