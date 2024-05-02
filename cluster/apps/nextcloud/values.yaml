@@ -61,7 +61,7 @@ ingress:
   labels: {}
   path: /
   pathType: Prefix
-
+  host: "nextcloud.192-168-1-200.nip.io"
 
 # Allow configuration of lifecycle hooks
 # ref: https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/
