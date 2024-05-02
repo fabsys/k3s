@@ -21,6 +21,6 @@ apps:
   - appName: gitlab-runner
     path: cluster/apps/gitlab-runner
     namespace: gitlab-runner
-  - appName: kubeinvaders 
-    path: cluster/apps/kubeinvaders
-    namespace: kubeinvaders
+  - appName: kubeinviders 
+    path: cluster/apps/kubeinviders
+    namespace: kubeinviders
