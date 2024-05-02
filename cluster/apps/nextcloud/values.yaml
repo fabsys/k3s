@@ -54,10 +54,10 @@ ingress:
   #    location ~ ^/(?:autotest|occ|issue|indie|db_|console) {
   #      deny all;
   #    }
-  tls:
-   - secretName: nextcloud-tls
-     hosts:
-      - nextcloud.192-168-1-200.nip.io
+  #tls:
+  # - secretName: nextcloud-tls
+  #   hosts:
+  #    - nextcloud.192-168-1-200.nip.io
   labels: {}
   path: /
   pathType: Prefix
@@ -74,7 +74,7 @@ phpClientHttpsFix:
   protocol: https
 
 nextcloud:
-  host: nextcloud.kube.home
+  host: nextcloud.192-168-1-200.nip.io
   username: admin
   password: changeme
   ## Use an existing secret
