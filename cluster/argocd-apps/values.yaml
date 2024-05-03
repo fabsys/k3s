@@ -25,6 +25,6 @@ apps:
     path: cluster/apps/nextcloud
     namespace: nextcloud
   - appName: kubeinvaders
-    path: cluster/apps/kubeinvaders
+    path: cluster/apps/kubeinviders
     namespace: kubeinvaders
 
