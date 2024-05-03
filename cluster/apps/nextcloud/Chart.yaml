@@ -5,25 +5,3 @@ dependencies:
   - name: nextcloud
     version: 4.6.8
     repository: https://nextcloud.github.io/helm/
----
-kind: Ingress
-apiVersion: networking.k8s.io/v1
-metadata:
-  name: nextcloud
-  annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
-    hajimari.io/appName: nextcloud
-    hajimari.io/icon: robot
-spec:
-  ingressClassName: nginx
-  rules:
-    - host: "nextcloud.192-168-1-200.nip.io"
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: nextcloud
-                port:
-                  number: 80 

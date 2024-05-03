@@ -23,8 +23,8 @@ replicaCount: 1
 ## ref: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ##
 ingress:
-  enabled: false 
-  className: nginx
+  enabled: true 
+  className: nginx 
   annotations: 
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
   #  nginx.ingress.kubernetes.io/proxy-body-size: 4G
@@ -62,7 +62,6 @@ ingress:
   labels: {}
   path: /
   pathType: Prefix
-  host: "nextcloud.192-168-1-200.nip.io"
 
 # Allow configuration of lifecycle hooks
 # ref: https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/
@@ -75,7 +74,7 @@ phpClientHttpsFix:
   protocol: https
 
 nextcloud:
-  host: nextcloud.192-168-1-200.nip.io
+  host: "nextcloud.192-168-1-200.nip.io"
   username: admin
   password: changeme
   ## Use an existing secret
