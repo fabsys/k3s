@@ -27,4 +27,7 @@ apps:
   - appName: kubeinvaders
     path: cluster/apps/kubeinviders
     namespace: kubeinvaders
+  - appName: pacman
+    path: cluster/apps/pacman
+    namespace: pacman
 
