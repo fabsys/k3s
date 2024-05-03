@@ -12,7 +12,7 @@ pacman:
       pullPolicy: Always
 
   mongodb:
-    enabled: true
+    enabled: false 
 
   ## Service configuration.
   service:
